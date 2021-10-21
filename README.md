@@ -6,6 +6,8 @@
 
 This index was made with [multi project tools](https://github.com/mattvenn/multi_project_tools)
 
+![multi macro](pics/multi_macro.png)
+
 ## RGB Mixer
 
 * Author: Matt Venn
