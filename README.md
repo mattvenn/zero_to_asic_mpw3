@@ -35,3 +35,21 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 
 ![VGA Clock](pics/vga_clock.jpg)
 
+## TPM2137
+
+* Author: Q3K & Matt Venn
+* Github: https://github.com/mattvenn/wrapped_tpm2137
+* commit: main
+* Description: CTF by Q3K - turn on the green light by sending the right code
+
+![TPM2137](pics/tpm2137.png)
+
+## Zube
+
+* Author: Jonathan 'theJPster' Pallant
+* Github: https://github.com/thejpster/zube_submission
+* commit: v1.2.0
+* Description: A generic Z80 bus peripheral
+
+![Zube](pics/zube.png)
+
