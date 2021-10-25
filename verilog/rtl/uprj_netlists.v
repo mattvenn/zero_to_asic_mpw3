@@ -23,14 +23,14 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_frequency_counter.lvs.powered.v"
+    `include "gl/zube_wrapped_project.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    //  1 Frequency counter              : mpw3_repos/wrapped_frequency_counter
-	`include "wrapped_frequency_counter/wrapper.v"
-	`include "wrapped_frequency_counter/frequency_counter/src/edge_detect.v"
-	`include "wrapped_frequency_counter/frequency_counter/src/frequency_counter.v"
-	`include "wrapped_frequency_counter/frequency_counter/src/seven_segment.v"
+    //  5 Zube                           : mpw3_repos/zube_submission
+	`include "zube_submission/wrapper.v"
+	`include "zube_submission/zube/src/zube_wrapper.v"
+	`include "zube_submission/zube/src/zube.v"
+	`include "zube_submission/zube/src/data_register.v"
 
 `endif
