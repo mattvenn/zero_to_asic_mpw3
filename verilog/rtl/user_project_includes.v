@@ -6,7 +6,7 @@
 // | 2          | VGA Clock         | Matt Venn                    | https://github.com/mattvenn/wrapped_vga_clock         | main                                     |
 // | 3          | TPM2137           | Q3K & Matt Venn              | https://github.com/mattvenn/wrapped_tpm2137           | main                                     |
 // | 4          | WS2812            | Matt Venn                    | https://github.com/mattvenn/wrapped_ws2812            | main                                     |
-// | 5          | Zube              | Jonathan 'theJPster' Pallant | https://github.com/thejpster/zube_submission          | v1.3.0                                   |
+// | 5          | Zube              | Jonathan 'theJPster' Pallant | https://github.com/thejpster/zube_submission          | v1.4.0                                   |
 // | 6          | Hack soc          | Maximo Balestrini            | https://github.com/mbalestrini/wrapped_hack_soc       | f9c39c3cff53683a6e26b55d6d7da565dff1822c |
 // +------------+-------------------+------------------------------+-------------------------------------------------------+------------------------------------------+
 `include "wrapped_rgb_mixer/wrapper.v" // 0
