@@ -23,14 +23,13 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/zube_wrapped_project.lvs.powered.v"
+    `include "gl/wrapped_nco.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    //  5 Zube                           : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/zube_submission
-	`include "zube_submission/wrapper.v"
-	`include "zube_submission/zube/src/zube_wrapper.v"
-	`include "zube_submission/zube/src/zube.v"
-	`include "zube_submission/zube/src/data_register.v"
+    //  7 nco                            : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/mpw3-nco
+	`include "mpw3-nco/wrapper.v"
+	`include "mpw3-nco/verilog/rtl/nco.v"
+	`include "mpw3-nco/src_spinal/generated/NcoWB.v"
 
 `endif

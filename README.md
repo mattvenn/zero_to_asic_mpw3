@@ -44,12 +44,39 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 
 ![TPM2137](pics/tpm2137.png)
 
+## WS2812
+
+* Author: Matt Venn
+* Github: https://github.com/mattvenn/wrapped_ws2812
+* commit: main
+* Description: WS2812 LED driver
+
+![WS2812](pics/ws2812.jpg)
+
 ## Zube
 
 * Author: Jonathan 'theJPster' Pallant
 * Github: https://github.com/thejpster/zube_submission
-* commit: v1.2.0
+* commit: v1.4.0
 * Description: A generic Z80 bus peripheral
 
 ![Zube](pics/zube.png)
+
+## Hack soc
+
+* Author: Maximo Balestrini
+* Github: https://github.com/mbalestrini/wrapped_hack_soc
+* commit: f9c39c3cff53683a6e26b55d6d7da565dff1822c
+* Description: Hardware implementation of the Hack Computer from the Nand to Tetris courses
+
+![Hack soc](pics/project.jpg)
+
+## nco
+
+* Author: Ameet Gohil
+* Github: https://github.com/ameetgohil/mpw3-nco
+* commit: main
+* Description: generates signed sin and cos outputs given an angle accessible via wishbone
+
+![nco](pics/empty.png)
 
