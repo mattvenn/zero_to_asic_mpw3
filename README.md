@@ -6,7 +6,7 @@
 
 This index was made with [multi project tools](https://github.com/mattvenn/multi_project_tools)
 
-![multi macro](pics/multi_macro.png)
+![multi macro](pics/multi_macro_annotated.png)
 
 ## RGB Mixer
 
@@ -57,7 +57,7 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 
 * Author: Jonathan 'theJPster' Pallant
 * Github: https://github.com/thejpster/zube_submission
-* commit: v1.4.0
+* commit: v1.4.1
 * Description: A generic Z80 bus peripheral
 
 ![Zube](pics/zube.png)
