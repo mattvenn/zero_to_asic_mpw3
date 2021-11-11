@@ -23,13 +23,14 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_nco.lvs.powered.v"
+    `include "gl/wrapped_wb_openram_shim.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    //  7 nco                            : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/mpw3-nco
-	`include "mpw3-nco/wrapper.v"
-	`include "mpw3-nco/verilog/rtl/nco.v"
-	`include "mpw3-nco/src_spinal/generated/NcoWB.v"
+    // 10 wb_openram_shim                : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_wb_openram_shim
+	`include "wrapped_wb_openram_shim/wrapper.v"
+	`include "wrapped_wb_openram_shim/wb_openram_wrapper/src/wb_openram_wrapper.v"
+	// include openram model
+	`include "libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v"
 
 `endif
