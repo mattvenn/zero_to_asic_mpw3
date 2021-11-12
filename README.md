@@ -66,7 +66,7 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 
 * Author: Maximo Balestrini
 * Github: https://github.com/mbalestrini/wrapped_hack_soc
-* commit: f9c39c3cff53683a6e26b55d6d7da565dff1822c
+* commit: 009a903f28b54a620bedea825d59de13c468f51a
 * Description: Hardware implementation of the Hack Computer from the Nand to Tetris courses
 
 ![Hack soc](pics/project.jpg)
@@ -78,5 +78,50 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 * commit: main
 * Description: generates signed sin and cos outputs given an angle accessible via wishbone
 
-![nco](pics/empty.png)
+![nco](pics/nco.png)
+
+## Wishbone HyperRAM
+
+* Author: Pawel Sitarz
+* Github: https://github.com/embelon/wrapped_wb_hyperram
+* commit: mpw3
+* Description: Simple HyperRAM driver accesible on Wishbone bus
+
+![Wishbone HyperRAM](pics/HyperRAM_WriteMemorySpace.png)
+
+## wb_openram_shim
+
+* Author: Embelon & Matt Venn
+* Github: https://github.com/embelon/wrapped_wb_openram_shim
+* commit: mpw3
+* Description: Wrapped version of Wishbone OpenRam Shim/Wrapper
+
+![wb_openram_shim](pics/shim.png)
+
+## wiggly_ic_1
+
+* Author: Omar Rizwan
+* Github: https://github.com/osnr/wrapped_wiggly_ic_1
+* commit: main
+* Description: screen and mouse; interact
+
+![wiggly_ic_1](pics/screenshot.png)
+
+## keyvalue
+
+* Author: Giray Pultar
+* Github: https://github.com/giraypultar/wrapped_keyvalue
+* commit: main
+* Description: key value store
+
+![keyvalue](pics/keyvalue.png)
+
+## Wishbone demo
+
+* Author: Matt Venn
+* Github: https://github.com/mattvenn/wrapped_wishbone_demo
+* commit: main
+* Description: Wishbone buttons & LEDS
+
+![Wishbone demo](pics/wishbone_demo.png)
 
