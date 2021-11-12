@@ -11,6 +11,8 @@
 // | 7          | nco               | Ameet Gohil                  | https://github.com/ameetgohil/mpw3-nco                | main                                     |
 // | 8          | Wishbone HyperRAM | Pawel Sitarz                 | https://github.com/embelon/wrapped_wb_hyperram        | mpw3                                     |
 // | 10         | wb_openram_shim   | Embelon & Matt Venn          | https://github.com/embelon/wrapped_wb_openram_shim    | mpw3                                     |
+// | 11         | wiggly_ic_1       | Omar Rizwan                  | https://github.com/osnr/wrapped_wiggly_ic_1           | main                                     |
+// | 12         | keyvalue          | Giray Pultar                 | https://github.com/giraypultar/wrapped_keyvalue       | main                                     |
 // | 13         | Wishbone demo     | Matt Venn                    | https://github.com/mattvenn/wrapped_wishbone_demo     | main                                     |
 // +------------+-------------------+------------------------------+-------------------------------------------------------+------------------------------------------+
 `include "wrapped_rgb_mixer/wrapper.v" // 0
@@ -23,4 +25,6 @@
 `include "mpw3-nco/wrapper.v" // 7
 `include "wrapped_wb_hyperram/wrapper.v" // 8
 `include "wrapped_wb_openram_shim/wrapper.v" // 10
+`include "wrapped_wiggly_ic_1/wrapper.v" // 11
+`include "wrapped_keyvalue/wrapper.v" // 12
 `include "wrapped_wishbone_demo/wrapper.v" // 13
