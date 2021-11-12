@@ -23,14 +23,15 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_wb_openram_shim.lvs.powered.v"
+    `include "gl/wrapped_wiggly_ic_1.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    // 10 wb_openram_shim                : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_wb_openram_shim
-	`include "wrapped_wb_openram_shim/wrapper.v"
-	`include "wrapped_wb_openram_shim/wb_openram_wrapper/src/wb_openram_wrapper.v"
-	// include openram model
-	`include "libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v"
+    // 11 wiggly_ic_1                    : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_wiggly_ic_1
+	`include "wrapped_wiggly_ic_1/wrapper.v"
+	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/ps2rx.sv"
+	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/ps2tx.sv"
+	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/simple_display_timings_480p.sv"
+	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/wiggly_ic_1.sv"
 
 `endif

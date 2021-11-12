@@ -32,6 +32,8 @@ set ::env(DESIGN_NAME) user_project_wrapper
 # save some time
 set ::env(RUN_KLAYOUT_XOR) 0
 set ::env(RUN_KLAYOUT_DRC) 0
+# no point in running DRC with magic once openram is in because it will find 3M issues
+set ::env(MAGIC_DRC_USE_GDS) 0
 
 
 ## Source Verilog Files
@@ -67,10 +69,12 @@ lappend ::env(EXTRA_GDS_FILES) $::env(PDK_ROOT)/$::env(PDK)/libs.ref/sky130_sram
 
 # routing adjustments
 # turn off li for any routing
-# and add workaround for precheck issues with met4 clearance after maglef substitution for OpenRAM
-set ::env(GLB_RT_OBS)  "li1  0     0     2920 3520,
-                        met4 2020 480 2499.78 877.5"
-
+# and add workaround for routing issues with openram by adding
+# 480 wide x 400 tall obs (from openram 0,0) on met2,3,4
+set ::env(GLB_RT_OBS)  "li1  0    0   2920    3520,
+                        met4 344  464 824     864,
+                        met3 344  464 824     864,
+                        met2 344  464 824     864"
 
 set ::env(GLB_RT_ALLOW_CONGESTION) "1"
 

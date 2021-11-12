@@ -127,6 +127,166 @@ module user_project_wrapper #(
         .din0 (openram_din0),
         .dout0 (openram_dout0)
     );
+    wrapped_rgb_mixer wrapped_rgb_mixer_0(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[0]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_frequency_counter wrapped_frequency_counter_1(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[1]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_vga_clock wrapped_vga_clock_2(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[2]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_tpm2137 wrapped_tpm2137_3(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[3]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_ws2812 wrapped_ws2812_4(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[4]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    zube_wrapped_project zube_wrapped_project_5(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[5]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
+        .user_irq (user_irq[2:0]),
+        .wb_rst_i (wb_rst_i),
+        .wbs_stb_i (wbs_stb_i),
+        .wbs_cyc_i (wbs_cyc_i),
+        .wbs_we_i (wbs_we_i),
+        .wbs_sel_i (wbs_sel_i[3:0]),
+        .wbs_dat_i (wbs_dat_i[31:0]),
+        .wbs_adr_i (wbs_adr_i[31:0]),
+        .wbs_ack_o (wbs_ack_o),
+        .wbs_dat_o (wbs_dat_o[31:0])
+    );
+
+    wrapped_hack_soc wrapped_hack_soc_6(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[6]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_nco wrapped_nco_7(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[7]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
+        .wb_rst_i (wb_rst_i),
+        .wbs_stb_i (wbs_stb_i),
+        .wbs_cyc_i (wbs_cyc_i),
+        .wbs_we_i (wbs_we_i),
+        .wbs_sel_i (wbs_sel_i[3:0]),
+        .wbs_dat_i (wbs_dat_i[31:0]),
+        .wbs_adr_i (wbs_adr_i[31:0]),
+        .wbs_ack_o (wbs_ack_o),
+        .wbs_dat_o (wbs_dat_o[31:0])
+    );
+
+    wrapped_wb_hyperram wrapped_wb_hyperram_8(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[8]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
+        .wb_rst_i (wb_rst_i),
+        .wbs_stb_i (wbs_stb_i),
+        .wbs_cyc_i (wbs_cyc_i),
+        .wbs_we_i (wbs_we_i),
+        .wbs_sel_i (wbs_sel_i[3:0]),
+        .wbs_dat_i (wbs_dat_i[31:0]),
+        .wbs_adr_i (wbs_adr_i[31:0]),
+        .wbs_ack_o (wbs_ack_o),
+        .wbs_dat_o (wbs_dat_o[31:0])
+    );
+
     wrapped_wb_openram_shim wrapped_wb_openram_shim_10(
         `ifdef USE_POWER_PINS
         .vccd1 (vccd1),
@@ -150,6 +310,48 @@ module user_project_wrapper #(
         .openram_addr0 (openram_addr0[7:0]),
         .openram_din0 (openram_din0[31:0]),
         .openram_dout0 (openram_dout0[31:0])
+    );
+
+    wrapped_wishbone_demo wrapped_wishbone_demo_13(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[13]),
+        .wb_rst_i (wb_rst_i),
+        .wbs_stb_i (wbs_stb_i),
+        .wbs_cyc_i (wbs_cyc_i),
+        .wbs_we_i (wbs_we_i),
+        .wbs_sel_i (wbs_sel_i[3:0]),
+        .wbs_dat_i (wbs_dat_i[31:0]),
+        .wbs_adr_i (wbs_adr_i[31:0]),
+        .wbs_ack_o (wbs_ack_o),
+        .wbs_dat_o (wbs_dat_o[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
+
+    wrapped_wiggly_ic_1 wrapped_wiggly_ic_1_11(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[11]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
+        .wb_rst_i (wb_rst_i),
+        .wbs_stb_i (wbs_stb_i),
+        .wbs_cyc_i (wbs_cyc_i),
+        .wbs_we_i (wbs_we_i),
+        .wbs_sel_i (wbs_sel_i[3:0]),
+        .wbs_dat_i (wbs_dat_i[31:0]),
+        .wbs_adr_i (wbs_adr_i[31:0]),
+        .wbs_ack_o (wbs_ack_o),
+        .wbs_dat_o (wbs_dat_o[31:0])
     );
 
     // end of module instantiation
