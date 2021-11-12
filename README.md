@@ -89,6 +89,15 @@ This index was made with [multi project tools](https://github.com/mattvenn/multi
 
 ![Wishbone HyperRAM](pics/HyperRAM_WriteMemorySpace.png)
 
+## Parallax
+
+* Author: Renldas Zioma
+* Github: https://github.com/rejunity/zero-to-asic-wrapped-parallax
+* commit: main
+* Description: Scrolling procedural background using several LFSRs. VGA 640x480@70hz
+
+![Parallax](pics/Parallax.png)
+
 ## wb_openram_shim
 
 * Author: Embelon & Matt Venn
