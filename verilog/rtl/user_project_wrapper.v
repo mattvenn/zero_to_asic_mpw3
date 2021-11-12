@@ -333,27 +333,6 @@ module user_project_wrapper #(
         .io_oeb (io_oeb[37:0])
     );
 
-    wrapped_wiggly_ic_1 wrapped_wiggly_ic_1_11(
-        `ifdef USE_POWER_PINS
-        .vccd1 (vccd1),
-        .vssd1 (vssd1),
-        `endif
-        .wb_clk_i (wb_clk_i),
-        .active (active[11]),
-        .io_in (io_in[37:0]),
-        .io_out (io_out[37:0]),
-        .io_oeb (io_oeb[37:0]),
-        .wb_rst_i (wb_rst_i),
-        .wbs_stb_i (wbs_stb_i),
-        .wbs_cyc_i (wbs_cyc_i),
-        .wbs_we_i (wbs_we_i),
-        .wbs_sel_i (wbs_sel_i[3:0]),
-        .wbs_dat_i (wbs_dat_i[31:0]),
-        .wbs_adr_i (wbs_adr_i[31:0]),
-        .wbs_ack_o (wbs_ack_o),
-        .wbs_dat_o (wbs_dat_o[31:0])
-    );
-
     // end of module instantiation
 
 endmodule	// user_project_wrapper

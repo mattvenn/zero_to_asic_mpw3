@@ -23,15 +23,12 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_wiggly_ic_1.lvs.powered.v"
+    `include "gl/wrapped_keyvalue.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    // 11 wiggly_ic_1                    : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_wiggly_ic_1
-	`include "wrapped_wiggly_ic_1/wrapper.v"
-	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/ps2rx.sv"
-	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/ps2tx.sv"
-	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/simple_display_timings_480p.sv"
-	`include "wrapped_wiggly_ic_1/wiggly_ic_1/rtl/wiggly_ic_1.sv"
+    // 12 keyvalue                       : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_keyvalue
+	`include "wrapped_keyvalue/wrapper.v"
+	`include "wrapped_keyvalue/src/keyvalue.v"
 
 `endif

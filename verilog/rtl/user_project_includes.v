@@ -12,7 +12,6 @@
 // | 8          | Wishbone HyperRAM | Pawel Sitarz                 | https://github.com/embelon/wrapped_wb_hyperram        | mpw3                                     |
 // | 10         | wb_openram_shim   | Embelon & Matt Venn          | https://github.com/embelon/wrapped_wb_openram_shim    | mpw3                                     |
 // | 13         | Wishbone demo     | Matt Venn                    | https://github.com/mattvenn/wrapped_wishbone_demo     | main                                     |
-// | 11         | wiggly_ic_1       | Omar Rizwan                  | https://github.com/osnr/wrapped_wiggly_ic_1           | main                                     |
 // +------------+-------------------+------------------------------+-------------------------------------------------------+------------------------------------------+
 `include "wrapped_rgb_mixer/wrapper.v" // 0
 `include "wrapped_frequency_counter/wrapper.v" // 1
@@ -25,4 +24,3 @@
 `include "wrapped_wb_hyperram/wrapper.v" // 8
 `include "wrapped_wb_openram_shim/wrapper.v" // 10
 `include "wrapped_wishbone_demo/wrapper.v" // 13
-`include "wrapped_wiggly_ic_1/wrapper.v" // 11
