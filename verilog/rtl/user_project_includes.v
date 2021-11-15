@@ -12,10 +12,10 @@
 // | 8          | Wishbone HyperRAM | Pawel Sitarz                 | https://github.com/embelon/wrapped_wb_hyperram            | 123a4492dcc7f34b48f3dc15fce74d976ac33181 |
 // | 9          | Parallax          | Renldas Zioma                | https://github.com/rejunity/zero-to-asic-wrapped-parallax | 6a1771bbd54b0b929915f121982e533b3b1df68c |
 // | 10         | wb_openram_shim   | Embelon & Matt Venn          | https://github.com/embelon/wrapped_wb_openram_shim        | a01934627c1a6ee9288ff7b47ffe1e4e97b0554f |
-// | 11         | wiggly_ic_1       | Omar Rizwan                  | https://github.com/osnr/wrapped_wiggly_ic_1               | main                                     |
+// | 11         | wiggly_ic_1       | Omar Rizwan                  | https://github.com/osnr/wrapped_wiggly_ic_1               | ed5fca687ae598f7ffa74c59872c585ec1a5511e |
 // | 12         | keyvalue          | Giray Pultar                 | https://github.com/giraypultar/wrapped_keyvalue           | ad6e31697aa661e1383f01f9b03817681704cc5e |
 // | 13         | Wishbone demo     | Matt Venn                    | https://github.com/mattvenn/wrapped_wishbone_demo         | 8c1784235533a486dd6c754bfd2c62fade0896f9 |
-// | 14         | OpenPUF           | Pedro Rivera                 | https://github.com/pedrorivera/wrapped_OpenPUF            | main                                     |
+// | 14         | OpenPUF           | Pedro Rivera                 | https://github.com/pedrorivera/wrapped_OpenPUF            | eec589a456a3f603e97aa1647ae8dca453f612d8 |
 // +------------+-------------------+------------------------------+-----------------------------------------------------------+------------------------------------------+
 `include "wrapped_rgb_mixer/wrapper.v" // 0
 `include "wrapped_frequency_counter/wrapper.v" // 1

@@ -334,18 +334,12 @@ module user_project_wrapper #(
         `endif
         .wb_clk_i (wb_clk_i),
         .active (active[11]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
         .io_in (io_in[37:0]),
         .io_out (io_out[37:0]),
-        .io_oeb (io_oeb[37:0]),
-        .wb_rst_i (wb_rst_i),
-        .wbs_stb_i (wbs_stb_i),
-        .wbs_cyc_i (wbs_cyc_i),
-        .wbs_we_i (wbs_we_i),
-        .wbs_sel_i (wbs_sel_i[3:0]),
-        .wbs_dat_i (wbs_dat_i[31:0]),
-        .wbs_adr_i (wbs_adr_i[31:0]),
-        .wbs_ack_o (wbs_ack_o),
-        .wbs_dat_o (wbs_dat_o[31:0])
+        .io_oeb (io_oeb[37:0])
     );
 
     wrapped_keyvalue wrapped_keyvalue_12(
