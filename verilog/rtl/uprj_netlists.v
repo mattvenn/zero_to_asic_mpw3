@@ -23,13 +23,12 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_parallax.lvs.powered.v"
+    `include "gl/wrapped_OpenPUF.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    //  9 Parallax                       : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/zero-to-asic-wrapped-parallax
-	`include "zero-to-asic-wrapped-parallax/wrapper.v"
-	`include "zero-to-asic-wrapped-parallax/zero-to-asic/Parallax/Parallax.v"
-	`include "zero-to-asic-wrapped-parallax/zero-to-asic/Parallax/VgaSyncGen.v"
+    // 14 OpenPUF                        : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_OpenPUF
+	`include "wrapped_OpenPUF/wrapper.v"
+	`include "wrapped_OpenPUF/OpenPUF/src/DelayPUF.v"
 
 `endif
