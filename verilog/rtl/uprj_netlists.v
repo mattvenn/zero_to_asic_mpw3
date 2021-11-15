@@ -23,12 +23,13 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/wrapped_OpenPUF.lvs.powered.v"
+    `include "gl/wrapped_keyvalue.lvs.powered.v"
 
 `else
     `include "user_project_wrapper.v"
-    // 14 OpenPUF                        : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_OpenPUF
-	`include "wrapped_OpenPUF/wrapper.v"
-	`include "wrapped_OpenPUF/OpenPUF/src/DelayPUF.v"
+    // 12 keyvalue                       : /home/matt/work/asic-workshop/shuttle3-mpw-3/openlane/designs/wrapped_keyvalue
+	`include "wrapped_keyvalue/wrapper.v"
+	`include "wrapped_keyvalue/src/keyvalue_1.v"
+	`include "wrapped_keyvalue/src/keyvalue_2.v"
 
 `endif
